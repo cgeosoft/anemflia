@@ -1,0 +1,14 @@
+{
+  "name": "website-anemflia",
+  "version": "0.0.0",
+  "description": "anemflia.gr",
+  "author": {
+    "name": "Christos Georgiou",
+    "email": "georgiou.christos@outlook.com",
+    "url": "http://cgeosoft.com"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "gulp-cg-toolkit": "2.1.1"
+  }
+}

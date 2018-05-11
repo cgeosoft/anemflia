@@ -1,0 +1,10 @@
+@mixin custom-button {
+	font-size: .75rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: .3rem;
+}
+
+@mixin border-radius {
+	border-radius: .3rem;
+}
