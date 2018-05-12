@@ -1,7 +1,6 @@
 @import "bootstrap";
 @import "variables";
 @import "mixins";
-
 //Global Styles
 body {
 	font-family: $main-font;
@@ -275,7 +274,7 @@ link-white:visited {
 
 a.navbar-brand,
 a.logo {
-	font-family: $headline-font;
+	font-family: $brand-font;
 	color: #fff !important;
 	font-size: 2rem;
 	font-weight: bold;
@@ -299,7 +298,6 @@ li.nav-item {
 }
 
 .cover-1 {
-	background: $background-color url(../img/img1.jpg) center;
 	background-size: cover;
 	min-height: 50rem;
 	height: auto;
@@ -307,11 +305,15 @@ li.nav-item {
 	width: 100%;
 	color: #fff;
 	padding-top: 1rem;
+	position: relative;
+	z-index: 0;
 	h1 {
 		font-weight: 200;
 	}
 	p.lead {
 		margin: 2rem auto;
+		font-size: 2rem;
+		font-weight: 300;
 		color: rgba(255, 255, 255, .75);
 	}
 	.cover-container {
@@ -319,6 +321,17 @@ li.nav-item {
 		height: 100%;
 		min-height: 44rem;
 		margin: 0 auto;
+		z-index: 2;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.3);
+		z-index: -1;
 	}
 }
 
@@ -384,6 +397,9 @@ li.nav-item {
 	h2 {
 		margin-top: 2rem;
 	}
+	h4 {
+		text-transform: none;
+	}
 	.col-feature {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -395,6 +411,9 @@ li.nav-item {
 			background: none;
 			border: .15rem solid $lighter-gray;
 		}
+	}
+	.gallery{
+		display: none;
 	}
 }
 
@@ -635,4 +654,7 @@ li.nav-item {
 		display: flex;
 		justify-content: center;
 	}
+}
+.jumbotron-heading{
+	font-family: $brand-font;
 }

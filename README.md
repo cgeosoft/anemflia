@@ -1,5 +1,5 @@
-# cgeosoft
+# Anemflia
 
-This is the repo for my personal website
+This is the repo for anemflia site
 
-Find it [here](https://cgeosoft.com/)
+Find it [here](https://anemflia.gr/en)
