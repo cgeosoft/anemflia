@@ -1,0 +1,14 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+	const galleries = {}
+	galleries.maistros = baguetteBox.run('#gallery-maistros');
+	galleries.apiliotis = baguetteBox.run('#gallery-apiliotis');
+	galleries.zefiros = baguetteBox.run('#gallery-zefiros');
+	galleries.mpatis = baguetteBox.run('#gallery-mpatis');
+	function openGallery(gallery) {
+		baguetteBox.show(0, galleries[gallery][0])
+	}
+</script>
+</body>
+
+</html>
