@@ -275,7 +275,7 @@ link-white:visited {
 a.navbar-brand,
 a.logo {
 	font-family: $brand-font;
-	font-size:300;
+	font-size: 300;
 	color: #fff !important;
 	font-size: 2rem;
 	font-weight: bold;
@@ -296,6 +296,38 @@ li.nav-item {
 	.btn-white {
 		color: $dark-gray;
 	}
+	&.nav-item-divider {
+		height: 40px;
+		width: 1px;
+		background: rgba(220, 220, 220, 0.3);
+		display: block;
+		margin: 0 7px;
+	}
+	&.nav-item-social {
+		background: #ffffffb8;
+		padding: 2px 0 0;
+		display: block;
+		margin: 7px 5px 0;
+		border-radius: 15px;
+		width: 28px;
+		height: 28px;
+		text-align: center;
+		span {
+			color: #333;
+		}
+		&:hover {
+			background: #fff;
+		}
+	}
+	&.nav-item-info {
+		background: #ffffffb8;
+		color: #333;
+		padding: 4px 8px;
+		display: block;
+		border-radius: 15px;
+		margin: 7px;
+		font-size: .8rem;
+	}
 }
 
 .cover-1 {
@@ -313,7 +345,7 @@ li.nav-item {
 		font-size: 10rem;
 	}
 	p.lead {
-    margin: 0rem auto 3rem;
+		margin: 0rem auto 3rem;
 		font-size: 2rem;
 		font-weight: 300;
 		color: rgba(255, 255, 255, .75);
@@ -414,7 +446,7 @@ li.nav-item {
 			border: .15rem solid $lighter-gray;
 		}
 	}
-	.gallery{
+	.gallery {
 		display: none;
 	}
 }
@@ -657,7 +689,8 @@ li.nav-item {
 		justify-content: center;
 	}
 }
-.jumbotron-heading{
+
+.jumbotron-heading {
 	font-family: $brand-font;
-	font-size:300;
+	font-size: 300;
 }
