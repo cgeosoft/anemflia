@@ -7,36 +7,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mt-2 mt-md-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/el">
-              <img class="rounded-circle bg-white" style="padding:1px;width:25px;" src="/img/flags/001-greece.png">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/en">
-              <img class="rounded-circle bg-white" style="padding:1px;width:25px;" src="/img/flags/002-united-kingdom.png">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/de">
-              <img class="rounded-circle bg-white" style="padding:1px;width:25px;" src="/img/flags/003-germany.png">
-            </a>
-          </li>
-        </ul>
+        {{>top-menu}}
       </div>
     </div>
   </nav>
-  <div class="container">
-    <h1 class="jumbotron-heading">{{_base.header.title}}</h1>
-    <p class="lead">{{_base.header.subtitle}}</p>
+  <div class="container intro">
+    <h1>{{_base.header.title}}</h1>
+    <h2>{{_base.header.subtitle}}</h2>
   </div>
 </section>
 <section class="content-4">
   <div class="container">
     <div class="row justify-center mt-5">
       <div class="col-md-8 pl-5 pr-5">
-        <h2 class="text-center">Εταιρεία</h2>
+        <h2 class="title">Εταιρεία</h2>
         <div class="divider"></div>
         <div class="row">
           <div class="col-6">
