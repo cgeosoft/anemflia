@@ -10,7 +10,7 @@
         font-size: 10rem;
         line-height: 7rem;
     }
-    h2{
+    h2 {
         font-family: $brand-font;
         font-size: 5rem;
         line-height: 4rem;
@@ -19,6 +19,26 @@
         h1 {
             font-size: 15rem;
             line-height: 13rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6rem;
+                line-height: 5rem;
+            }
+            h2 {
+                font-size: 3rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 6rem;
+            line-height: 5rem;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 2rem;
         }
     }
 }
@@ -34,10 +54,55 @@ section {
         text-align: center;
         font-size: 5rem;
         margin: 0;
+        line-height: 3rem;
     }
 }
 
-p{
+p {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.cover-1 .cover-container {
+    margin: -56px auto 0;
+}
+
+li.nav-item {
+    &.nav-item-divider {
+        height: 40px;
+        width: 1px;
+        background: rgba(220, 220, 220, 0.3);
+        display: block;
+        margin: 0 7px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &.nav-item-social {
+        a {
+            display: block;
+            text-align: center;
+            &:hover {
+                background: #fff;
+            }
+            span {
+                width: 28px;
+                height: 28px;
+                padding: 6px 0 0;
+                background: #ffffffb8;
+                border-radius: 15px;
+                color: #333;
+                margin: 4px;
+            }
+        }
+    }
+    &.nav-item-info {
+        background: #ffffffb8;
+        color: #333;
+        padding: 4px 8px;
+        display: block;
+        border-radius: 15px;
+        margin: 7px;
+        font-size: .8rem;
+    }
 }

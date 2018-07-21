@@ -293,38 +293,6 @@ li.nav-item {
 	.btn-white {
 		color: $dark-gray;
 	}
-	&.nav-item-divider {
-		height: 40px;
-		width: 1px;
-		background: rgba(220, 220, 220, 0.3);
-		display: block;
-		margin: 0 7px;
-	}
-	&.nav-item-social {
-		background: #ffffffb8;
-		padding: 2px 0 0;
-		display: block;
-		margin: 7px 5px 0;
-		border-radius: 15px;
-		width: 28px;
-		height: 28px;
-		text-align: center;
-		span {
-			color: #333;
-		}
-		&:hover {
-			background: #fff;
-		}
-	}
-	&.nav-item-info {
-		background: #ffffffb8;
-		color: #333;
-		padding: 4px 8px;
-		display: block;
-		border-radius: 15px;
-		margin: 7px;
-		font-size: .8rem;
-	}
 }
 
 .cover-1 {
