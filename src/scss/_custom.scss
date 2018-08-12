@@ -1,110 +1,131 @@
 @font-face {
-    font-family: Fifindrel_Unicode;
-    src: url("/fonts/AC-Fifindrel_Unicode.otf");
+  font-family: Fifindrel_Unicode;
+  src: url("/fonts/AC-Fifindrel_Unicode.otf");
 }
 
 .intro {
-    color: #FFF;
+  color: #FFF;
+  h1 {
+    font-family: $brand-font;
+    font-size: 10rem;
+    line-height: 7rem;
+  }
+  h2 {
+    font-family: $brand-font;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-style: italic;
+  }
+  &.intro-main {
     h1 {
-        font-family: $brand-font;
-        font-size: 10rem;
-        line-height: 7rem;
-    }
-    h2 {
-        font-family: $brand-font;
-        font-size: 4rem;
-        line-height: 4rem;
-        font-style: italic;
-    }
-    &.intro-main {
-        h1 {
-            font-size: 15rem;
-            line-height: 10rem;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 6rem;
-                line-height: 5rem;
-            }
-            h2 {
-                font-size: 3rem;
-                line-height: 2rem;
-            }
-        }
+      font-size: 15rem;
+      line-height: 10rem;
     }
     @media (max-width: 768px) {
-        h1 {
-            font-size: 6rem;
-            line-height: 5rem;
-        }
-        h2 {
-            font-size: 3rem;
-            line-height: 2rem;
-        }
+      h1 {
+        font-size: 6rem;
+        line-height: 5rem;
+      }
+      h2 {
+        font-size: 3rem;
+        line-height: 2rem;
+      }
     }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 2rem;
+    }
+  }
 }
 
 .cover-1 {
-    background-image: url(/img/01.jpg);
-    background-position: right;
+  background-image: url(/img/01.jpg);
+  background-position: right;
 }
 
 section {
-    h2.title {
-        font-family: $brand-font;
-        text-align: center;
-        font-size: 2rem;
-        margin: 0;
-        line-height: 3rem;
-        font-style: italic;
-    }
+  h2.title {
+    font-family: $brand-font;
+    text-align: center;
+    font-size: 6rem;
+    margin: 0;
+    line-height: 3rem;
+    font-style: italic;
+  }
 }
 
 p {
-    font-size: 1rem;
-    font-weight: 300;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .cover-1 .cover-container {
-    margin: -56px auto 0;
+  margin: -56px auto 0;
 }
 
 li.nav-item {
-    &.nav-item-divider {
-        height: 40px;
-        width: 1px;
-        background: rgba(220, 220, 220, 0.3);
-        display: block;
-        margin: 0 7px;
-        @media (max-width: 768px) {
-            display: none;
-        }
+  &.nav-item-divider {
+    height: 40px;
+    width: 1px;
+    background: rgba(220, 220, 220, 0.3);
+    display: block;
+    margin: 0 7px;
+    @media (max-width: 768px) {
+      display: none;
     }
-    &.nav-item-social {
-        a {
-            display: block;
-            text-align: center;
-            &:hover {
-                background: #fff;
-            }
-            span {
-                width: 28px;
-                height: 28px;
-                padding: 6px 0 0;
-                background: #ffffffb8;
-                border-radius: 15px;
-                color: #333;
-                margin: 4px;
-            }
+  }
+  &.nav-item-social {
+    a {
+      display: block;
+      text-align: center;
+      padding: .5rem .5rem;
+      &:hover {
+        span {
+          background: #fff;
         }
-    }
-    &.nav-item-info {
+      }
+      span {
+        width: 25px;
+        height: 25px;
+        padding: 3px 0 0;
         background: #ffffffb8;
-        color: #333;
-        padding: 4px 8px;
-        display: block;
         border-radius: 15px;
-        margin: 7px;
-        font-size: .8rem;
+        color: #333;
+        border: solid 1px #FFF;
+      }
     }
+  }
+  &.nav-item-info {
+    background: #ffffffb8;
+    color: #333;
+    padding: 4px 8px;
+    display: block;
+    border-radius: 15px;
+    margin: 7px;
+    font-size: .8rem;
+  }
+  &.nav-item-btn {
+    background: #ffffffb8;
+    padding: 0px 3px;
+    display: block;
+    border-radius: 15px;
+    margin: 0 0 0 7px;
+    font-size: .8rem;
+    a {
+      color: #333 !important;
+    }
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+.cover-inner {
+  vertical-align: bottom;
 }
