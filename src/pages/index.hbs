@@ -3,17 +3,15 @@
 <section class="content-4">
   <div class="container">
     <div class="row justify-center mt-5">
-      <div class="col-lg-6 pl-5 pr-5 mb-4 text-center">
-        <img class="mb-4 img-fluid rounded-circle" src="/img/img1-sq.jpg">
+      <div class="col-lg-6 pt-5 pl-5 pr-5 mb-4 text-center">
+        <img class="mb-4 img-fluid rounded-circle" src="/img/image_1.jpg">
       </div>
       <div class="col-lg-6 text-left">
         <h2 class="title">{{mainText.title}}</h2>
         <div class="divider"></div>
         <p>{{mainText.lead}}</p>
-        <div class="border-left pl-4">
         {{#each mainText.p}}
         <p>{{this}}</p>{{/each}}
-        </div>
       </div>
     </div>
   </div>
@@ -22,14 +20,10 @@
 <hr>
 <section class="features-1 text-center">
   <div class="container">
-    <h2 class="title">Δωμάτια</h2>
+    <h2 class="title">{{rooms.title}}</h2>
     <div class="divider"></div>
-    <p class="constrain-width mt-4">Η "ανεμφλιά" διαθέτει 4 άνετα διαμερίσματα, όλα με αυτόνομο κλιματισμό, δωρεάν Wi-Fi, τηλεόραση, ψυγείο και κουζίνα, έτσι
-      ώστε να απολαμβάνετε ανεξαρτησία στη διαμονή σας. Η φιλοξενία μας θα σας κάνει να αισθανθείτε σαν στο σπίτι σας.</p>
-    <p class="constrain-width mt-4">Τα διαμερίσματά μας βρίσκονται στο νέο λιμάνι της Τήνου, 500μ. από το κέντρο της Χώρας και 10 λεπτά με τα πόδια από την
-      Εκκλησία της Παναγίας.</p>
-    <p class="constrain-width mt-4">Κατά τον Όμηρο, η Τήνος ήταν το νησί όπου διέμενε ο θεός των ανέμων, Αίολος και έτσι τα δωμάτιά μας πήραν τα ονόματά τους
-      από τις αρχαίες ελληνικές ονομασίες των ανέμων.</p>
+    <p class="constrain-width mt-4">{{rooms.subject}}</p>
+    <p class="constrain-width mt-4">{{rooms.p}}</p>
     <div class="row">
       <div class="col-md-3 col-feature">
         <div class="img-thumbnail mb-2" style="height: 180px;">
@@ -37,12 +31,12 @@
             <img class="img-fluid" src="/img/rooms/maistros/03-thumb.jpg">
           </div>
         </div>
-        <h4>Μαΐστρος</h4>
+        <h4>{{maistros.title}}</h4>
         <p class="m-0" style="height:110px">
-          Ένα δίχωρο διαμέρισμα που μπορεί να φιλοξενήσει μέχρι 4 άτομα, πλήρως εξοπλισμένο, με σκεπαστή βεράντα και απεριόριστη θέα
+          {{maistros.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('maistros')">Φωτογραφιες</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('maistros')">{{general.photo}}</button>
         </p>
         <div id="gallery-maistros" class="gallery">
           <a href="/img/rooms/maistros/01.jpg">
@@ -71,12 +65,12 @@
             <img class="img-fluid" src="/img/rooms/apiliotis/03-thumb.jpg">
           </div>
         </div>
-        <h4>Απηλιώτης</h4>
+        <h4>{{apiliotis.title}}</h4>
         <p class="m-0" style="height:110px">
-          Ακόμα ένα δίχωρο διαμέρισμα που μπορεί να φιλοξενήσει μέχρι 4 άτομα, πλήρως εξοπλισμένο, με μικρή σκεπαστή αυλή και θέα
+            {{apiliotis.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('apiliotis')">Φωτογραφιες</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('apiliotis')">{{general.photo}}</button>
         </p>
         <div id="gallery-apiliotis" class="gallery">
           <a href="/img/rooms/apiliotis/01.jpg">
@@ -97,6 +91,9 @@
           <a href="/img/rooms/apiliotis/06.jpg">
             <img src="" alt="img">
           </a>
+          <a href="/img/rooms/apiliotis/07.jpg">
+            <img src="" alt="img">
+          </a>
         </div>
       </div>
       <div class="col-md-3 col-feature">
@@ -105,12 +102,12 @@
             <img class="img-fluid" src="/img/rooms/zefiros/02-thumb.jpg">
           </div>
         </div>
-        <h4>Ζέφυρος</h4>
+        <h4>{{zefyros.title}}</h4>
         <p class="m-0" style="height:110px">
-          Ένα μονόχωρο δίκλινο διαμέρισμα, πλήρως εξοπλισμένο, με σκεπαστή βεράντα και απεριόριστη θέα και
+          {{apiliotis.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('zefiros')">Φωτογραφιες</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('zefiros')">{{general.photo}}</button>
         </p>
         <div id="gallery-zefiros" class="gallery">
           <a href="/img/rooms/zefiros/01.jpg">
@@ -130,12 +127,12 @@
             <img class="img-fluid" src="/img/rooms/mpatis/02-thumb.jpg">
           </div>
         </div>
-        <h4>Μπάτης</h4>
+        <h4>{{mpatis.title}}</h4>
         <p class="m-0" style="height:110px">
-          Ένα μονόχωρο δίκλινο διαμέρισμα, πληρως εξοπλισμένο, με μικρή αυλή και απεριόριστη θέα.
+          {{mpatis.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('mpatis')">Φωτογραφιες</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('mpatis')">{{general.photo}}</button>
         </p>
         <div id="gallery-mpatis" class="gallery">
           <a href="/img/rooms/mpatis/01.jpg">
@@ -145,6 +142,9 @@
             <img src="" alt="img">
           </a>
           <a href="/img/rooms/mpatis/03.jpg">
+            <img src="" alt="img">
+          </a>
+          <a href="/img/rooms/mpatis/04.jpg">
             <img src="" alt="img">
           </a>
         </div>

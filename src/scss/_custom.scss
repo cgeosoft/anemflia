@@ -12,13 +12,14 @@
     }
     h2 {
         font-family: $brand-font;
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 4rem;
+        font-style: italic;
     }
     &.intro-main {
         h1 {
             font-size: 15rem;
-            line-height: 13rem;
+            line-height: 10rem;
         }
         @media (max-width: 768px) {
             h1 {
@@ -44,7 +45,7 @@
 }
 
 .cover-1 {
-    background-image: url(/img/img5.png);
+    background-image: url(/img/01.jpg);
     background-position: right;
 }
 
@@ -52,9 +53,10 @@ section {
     h2.title {
         font-family: $brand-font;
         text-align: center;
-        font-size: 5rem;
+        font-size: 2rem;
         margin: 0;
         line-height: 3rem;
+        font-style: italic;
     }
 }
 
