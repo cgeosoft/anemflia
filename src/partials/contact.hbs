@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row contact-details d-flex flex-column">
       <div class="col-sm-8 m-auto text-center">
-        <h2 class="title">Επικοινωνήστε μαζί μας</h2>
+        <h2 class="title">{{general.contact_us}}</h2>
         <p class="lead constrain-width mt-4">
-          ΛΕΩΦ. ΣΤΑΥΡΟΥ - ΚΙΟΝΙΩΝ, ΤΗΝΟΣ, ΕΛΛΑΣ
+          {{general.address}}
           <br>(+30)2283022141 - (+30)6973579509 - anemfliarooms@gmail.com
         </p>
       </div>
@@ -13,22 +13,25 @@
         <form class="contact-form mt-4" name="contact" action="https://formspree.io/anemfliarooms@gmail.com" method="POST">
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control-custom mb-4" name="Όνομα" placeholder="Όνομα">
+              <input type="text" class="form-control-custom mb-4" name="{{general.name}}" placeholder="{{general.name}}">
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control-custom mb-4" name="Τηλέφωνο" placeholder="Τηλέφωνο">
+              <input type="text" class="form-control-custom mb-4" name="{{general.surname}}" placeholder="{{general.surname}}">
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control-custom mb-4" name="Email" placeholder="Email">
+              <input type="text" class="form-control-custom mb-4" name="{{general.phone_txt}}" placeholder="{{general.phone_txt}}">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control-custom mb-4" name="{{general.mail}}" placeholder="{{general.mail}}">
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <textarea class="form-control-custom mb-4" rows="3" name="Μήνυμα" placeholder="Μήνυμα"></textarea>
+              <textarea class="form-control-custom mb-4" rows="3" name="{{general.text}}" placeholder="{{general.text}}"></textarea>
             </div>
           </div>
           <div class="d-flex">
-            <button type="submit" class="btn btn-primary btn-lg ml-auto">Αποστολη</button>
+            <button type="submit" class="btn btn-primary btn-lg ml-auto">{{general.send}}</button>
           </div>
         </form>
       </div>

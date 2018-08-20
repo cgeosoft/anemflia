@@ -1,12 +1,46 @@
 {
-  "mainText": {
-    "title": "You are most welcome!",
-    "lead": "You are invited to enjoy your vacation in the island of Tinos, the island of culture, traditional cuisine and the most beautiful and picturesque villages of Cyclades.",
-    "p": ["\"anemflia\" is a word of the local dialect. It comes from the words anemos that means wind and filia that means kisses. Is a descriptive word for the wind kisses, that is the gentle gusts of wind. Especially for the days of heat these wind gusts are reliefing, something like the vacations for our daily routine.",
-      "\"anemflia\" studios is a small family business next to the new port of Tinos, near \"Kalamia\" beach and very close to the center of \"Chora\", the main town of the island, where you can visit by foot among others the famous church of Holy Mary, various museums, shops, tavernas and bars, as well as is the optimal starting point for visiting the colorful and charming villages of the island by car, bike or bus. To help you with that, \"anemflia\" studios are located 200m from the bus station of \"Chora\" and close to a free parking lot.",
-      "Our appartments are fully equipped and thus ideal also for long stays.",
-      "The small number of appartments guaranties the special hospitallity of our guests.",
-      "The prices vary depending on the season, so please contact us to find out the price for your visit."
-    ]
-  }
+  "general":{
+  "photo": "Gallery",
+  "main": "Home",
+  "company": "Company Info",
+  "contact_us": "Contact Us",
+  "address": "LEOF. STAVROU KIONION, TINOS, GREECE",
+  "phone": "(+30)2283022141 - (+30)6973579509 - anemfliarooms@gmail.com",
+  "name": "Name",
+  "surname": "Surname",
+  "mail": "Email",
+  "phone_txt": "Phone Number",
+  "text": "Message",
+  "send": "Send"
+},
+"mainText": {
+  "title": "Welcome!",
+  "lead": "Come and spend your holidays in Tinos, an island with a rich culture, traditional cuisine, and home of the most beautiful Cycladic villages.",
+  "p": [
+    "\"Anemflia\" (wind kisses) a word of the local dialect of Tinos, describing the gentle gusts of wind blowing like kisses. Comforting breezes that are vital on a hot day, much like the holidays to escape everyday life.",
+    "\"Anemflia\" is a small family-run studio apartment rental business, located right outside the new port of Tinos, next to “Kalamia” beach, with the sea right by your doorsteps. It is very close to the Tinos’ town centre (Chora) where you can stroll through the traditional cobbled alleys and visit the local museums, the Church of “Panayia Megalochari” (Great Grace), lots of stores for your daily shopping, Greek restaurants and nightclubs.",
+    "\"Anemflia studios\" are 3-key, fully equipped studios, ideal for getaways as well as long vacation periods. The small number of studios ensures that guests enjoy a high level of service"
+  ]
+},
+"rooms": {
+  "title": "Rooms",
+  "subject":["Our studio apartments are located at the new port of Tinos, 500m. from Tinos’ town centre (Chora)\" and just a 10-minute walk from the Church of “Panayia Megalochari”."],
+  "p": ["Homer described Tinos as the home island of Aeolus, god of winds, and thus our rooms were named after those ancient winds."]
+},
+"maistros": {
+  "title": "Maistros",
+  "subject":["A two-room apartment which can accommodate up to 4 people, fully equipped, with a covered terrace and uninterrupted views."]
+},
+"apiliotis": {
+  "title": "Apiliotis",
+  "subject":[" A two-room apartment which can accommodate up to 4 people, fully equipped, with a small covered yard and a view."]
+},
+"zefyros": {
+  "title": "Zefyros",
+  "subject":["A one-room apartment with two beds, fully equipped, with a covered terrace and uninterrupted views."]
+},
+"mpatis": {
+  "title": "Mpatis",
+  "subject":["A one-room apartment with two beds, fully equipped, with a small yard and uninterrupted views."]
+}
 }
