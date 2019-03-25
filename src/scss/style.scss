@@ -3,3 +3,13 @@
 @import "mixins";
 @import "theme";
 @import "custom";
+
+.booking {
+    text-align: right;
+    img {
+        @extend .img-thumbnail;
+        @extend .mt-4;
+        width: 200px;
+    }
+
+}
