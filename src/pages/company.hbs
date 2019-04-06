@@ -2,8 +2,7 @@
 <section class="cover-1 pb-5 text-center" style="background-image: url(/img/01.jpg);min-height:150px;">
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
@@ -20,57 +19,41 @@
   <div class="container">
     <div class="row justify-center mt-5">
       <div class="col-md-8 pl-5 pr-5">
-        <h2 class="title">Εταιρεία</h2>
+        <h2 class="title">{{title}}</h2>
         <div class="divider"></div>
         <div class="row">
           <div class="col-lg-6">
-            <h4>Στοιχεια Εταιρειας</h4>
+            <h4>{{company.title}}</h4>
             <dl class="row">
-              <dt class="col-lg-6">Αρ. Γ.Ε.ΜΗ:</dt>
-              <dd class="col-lg-6">146221338000</dd>
-              <dt class="col-lg-6">Επωνυμία:</dt>
-              <dd class="col-lg-6">ΑΝΕΜΦΛΙΑ ΙΚΕ</dd>
-              <dt class="col-lg-6">Διακριτικοί Τίτλοι:</dt>
-              <dd class="col-lg-6">ΑΝΕΜΦΛΙΑ</dd>
-              <dt class="col-lg-6">ΑΦΜ:</dt>
-              <dd class="col-lg-6">800980442</dd>
-              <dt class="col-lg-6">Ημ/νία Σύστασης:</dt>
-              <dd class="col-lg-6">07/05/2018</dd>
-              <dt class="col-lg-6">Νομική Μορφή:</dt>
-              <dd class="col-lg-6">ΙΚΕ</dd>
-              <dt class="col-lg-6">Κατάσταση:</dt>
-              <dd class="col-lg-6">Ενεργή</dd>
+              {{#each company.items}}
+              <dt class="col-lg-6 text-right">{{label}}:</dt>
+              <dd class="col-lg-6">{{value}}</dd>
+              {{/each}}
             </dl>
           </div>
           <div class="col-lg-6">
-            <h4>Διευθυνση Επιχειρησης</h4>
+            <h4>{{address.title}}</h4>
             <dl class="row">
-              <dt class="col-lg-6">Νομός:</dt>
-              <dd class="col-lg-6">ΚΥΚΛΑΔΩΝ</dd>
-              <dt class="col-lg-6">Δήμος:</dt>
-              <dd class="col-lg-6">ΤΗΝΟΥ</dd>
-              <dt class="col-lg-6">Πόλη:</dt>
-              <dd class="col-lg-6">ΤΗΝΟΣ</dd>
-              <dt class="col-lg-6">Περιοχή:</dt>
-              <dd class="col-lg-6">ΤΗΝΟΣ</dd>
-              <dt class="col-lg-6">Οδός:</dt>
-              <dd class="col-lg-6">ΛΕΩΦ. ΣΤΑΥΡΟΥ ΚΙΟΝΙΩΝ</dd>
-              <dt class="col-lg-6">Τ.Κ.:</dt>
-              <dd class="col-lg-6">84200</dd>
+              {{#each address.items}}
+              <dt class="col-lg-4 text-right">{{label}}:</dt>
+              <dd class="col-lg-8">{{value}}</dd>
+              {{/each}}
             </dl>
           </div>
         </div>
 
         <div class="divider"></div>
-        <h4>Στοιχεια Διαχειρισης</h4>
-        <div>Ιωάννα Περπινιά του Γεωργίου Μέλος & Διαχειρίστρια</div>
+        <h4>{{manager.title}}</h4>
+        {{#each manager.items}}
+        <div>{{this}}</div>
+        {{/each}}
 
         <div class="divider"></div>
-        <h4>Στοιχεια Εταιρων</h4>
+        <h4>{{partners.title}}</h4>
         <ul>
-          <li>Ιωάννα Περπινιά του Γεωργίου, κάτοικος Τήνου Λεωφ. Σταυρού Κιονίων</li>
-          <li>Νεφέλη Γκύζη του Ευαγγέλου, κάτοικος Αθηνών Αγγ. Σικελιανού 16</li>
-          <li>Νικόλαος Περπινιάς του Γεωργίου, κάτοικος Αθηνών Αγγ. Σικελιανού 16</li>
+          {{#each partners.items}}
+          <li>{{this}}</li>
+          {{/each}}
         </ul>
       </div>
     </div>

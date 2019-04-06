@@ -1,0 +1,79 @@
+{
+  "title": "Company",
+  "company": {
+    "title": "Company Details",
+    "items": [
+      {
+        "label": "Reg. NO",
+        "value": "146221338000"
+      },
+      {
+        "label": "Tax Name",
+        "value": "ANEMFLIA ΙΚΕ"
+      },
+      {
+        "label": "Company Name",
+        "value": "ANEMFLIA"
+      },
+      {
+        "label": "VAT No",
+        "value": "800980442"
+      },
+      {
+        "label": "Register Date",
+        "value": "07/05/2018"
+      },
+      {
+        "label": "Legal Type",
+        "value": "Private Company"
+      },
+      {
+        "label": "Status",
+        "value": "Active"
+      }
+    ]
+  },
+  "address": {
+    "title": "Address",
+    "items": [
+      {
+        "label": "Region",
+        "value": "Cyclades"
+      },
+      {
+        "label": "Municipal",
+        "value": "Tinos"
+      },
+      {
+        "label": "City",
+        "value": "Tinos"
+      },
+      {
+        "label": "Area",
+        "value": "ΤΗΝΟΣ"
+      },
+      {
+        "label": "Street",
+        "value": "Leof. Stayrou Kionion"
+      },
+      {
+        "label": "Post Code",
+        "value": "84200"
+      }
+    ]
+  },
+  "manager": {
+    "title": "Manager",
+    "items": [
+      "Ioanna Perpinia Partner and Manager"
+    ]
+  },
+  "partners": {
+    "title": "Partners",
+    "items": [
+      "Ioanna Perpinia, address Leof. Stayrou Kionion",
+      "Nefeli Gkyzi, address Agg. Sikelianou 16",
+      "Nikolaos Perpinias, address Agg. Sikelianou 16"
+    ]
+  }
+}

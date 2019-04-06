@@ -11,7 +11,8 @@
         <div class="divider"></div>
         <p>{{mainText.lead}}</p>
         {{#each mainText.p}}
-        <p>{{this}}</p>{{/each}}
+        <p>{{this}}</p>
+        {{/each}}
       </div>
     </div>
   </div>
@@ -36,7 +37,7 @@
           {{maistros.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('maistros')">{{general.photo}}</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('maistros')">{{_base.general.photo}}</button>
         </p>
         <div id="gallery-maistros" class="gallery">
           <a href="/img/rooms/maistros/03.jpg">
@@ -50,7 +51,7 @@
           </a>
           <a href="/img/rooms/maistros/05.jpg">
             <img src="" alt="img">
-          </a>          
+          </a>
           <a href="/img/rooms/maistros/01.jpg">
             <img src="" alt="img">
           </a>
@@ -67,10 +68,10 @@
         </div>
         <h4>{{apiliotis.title}}</h4>
         <p class="m-0" style="height:110px">
-            {{apiliotis.subject}}
+          {{apiliotis.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('apiliotis')">{{general.photo}}</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('apiliotis')">{{_base.general.photo}}</button>
         </p>
         <div id="gallery-apiliotis" class="gallery">
           <a href="/img/rooms/apiliotis/01.jpg">
@@ -107,7 +108,7 @@
           {{zefyros.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('zefiros')">{{general.photo}}</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('zefiros')">{{_base.general.photo}}</button>
         </p>
         <div id="gallery-zefiros" class="gallery">
           <a href="/img/rooms/zefiros/01.jpg">
@@ -138,7 +139,7 @@
           {{mpatis.subject}}
         </p>
         <p>
-          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('mpatis')">{{general.photo}}</button>
+          <button class="btn btn-outline-secondary mt-2" onclick="openGallery('mpatis')">{{_base.general.photo}}</button>
         </p>
         <div id="gallery-mpatis" class="gallery">
           <a href="/img/rooms/mpatis/01.jpg">
