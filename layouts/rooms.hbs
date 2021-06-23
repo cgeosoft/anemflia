@@ -1,0 +1,18 @@
+{{>_start}}
+<section class="page-section" id="rooms">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0">{{intro.first}}</h2>
+    <p class="text-center">{{intro.second}}</p>
+    <hr class="divider" />
+  </div>
+  <div class="row room">
+    <div class="col-6 room-img">
+      <img src="{{rooms.0.image}}" alt="">
+    </div>
+    <div class="col-6 room-content">
+      <h3>{{rooms.0.name}}</h3>
+    </div>
+  </div>
+  
+</section>
+{{>_end}}

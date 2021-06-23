@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "home": "Home",
+    "company": "Company"
+  },
+  "header": {
+    "title": "Αnemflia",
+    "subtitle": "Appartments to let",
+    "button": "RESERVATION"
+  },
+  "general": {
+    "photo": "Gallery",
+    "main": "Home",
+    "company": "Company Info",
+    "contact_us": "Contact Us",
+    "address": "LEOF. STAVROU KIONION, TINOS, GREECE",
+    "phone": "(+30)2283022141 - (+30)6973579509 - anemfliarooms@gmail.com",
+    "name": "Name",
+    "surname": "Surname",
+    "mail": "Email",
+    "phone_txt": "Phone Number",
+    "text": "Message",
+    "send": "Send"
+  }
+}

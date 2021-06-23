@@ -1,0 +1,69 @@
+@import "../../node_modules/startbootstrap-creative/src/scss/variables";
+
+$primary: rgb(245, 228, 180);
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import custom styles
+@import "../../node_modules/startbootstrap-creative/src/scss/global";
+
+// Components
+@import "../../node_modules/startbootstrap-creative/src/scss/components/buttons";
+@import "../../node_modules/startbootstrap-creative/src/scss/components/dividers";
+@import "../../node_modules/startbootstrap-creative/src/scss/components/navbar";
+
+// Sections
+@import "../../node_modules/startbootstrap-creative/src/scss/sections/masthead";
+@import "../../node_modules/startbootstrap-creative/src/scss/sections/portfolio";
+
+header {
+    &.masthead {
+        background: linear-gradient(160deg, transparentize(white, 1), transparentize($primary, 0.4)),
+            url(/public/img/01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .title {
+            color: white;
+            text-shadow: 1px 1px 1px #6c6349;
+        }
+        .btn {
+            color: darken($primary, 60%);
+        }
+    }
+}
+
+.flags {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    a {
+        margin-left: 0.75rem;
+        img {
+            width: 21px;
+        }
+    }
+}
+
+.room {
+    height: 300px;
+
+    .room-img {
+        height: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            background-color: white;
+            right: 0;
+            top: 0;
+        }
+    }
+    .room-ccontent {
+        height: 100%;
+    }
+}

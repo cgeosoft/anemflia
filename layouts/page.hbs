@@ -1,0 +1,30 @@
+{{>_start}}
+<section class="cover-1 pb-5 text-center" style="background-image: url(/img/01.jpg);min-height:150px;">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+        {{>top-menu}}
+      </div>
+    </div>
+  </nav>
+  <div class="container intro">
+    <h1>{{_base.header.title}}</h1>
+    <h2>{{_base.header.subtitle}}</h2>
+  </div>
+</section>
+<section class="content-4">
+  <div class="container">
+    <div class="row justify-center mt-5">
+      <div class="col-md-8 pl-5 pr-5">
+        <h2 class="title">{{title}}</h2>
+        <div class="divider"></div>
+        {{{contents}}}
+      </div>
+    </div>
+  </div>
+</section>
+{{>footer}}
+{{>_end}}

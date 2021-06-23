@@ -1,0 +1,32 @@
+{
+  "mainText": {
+    "title": "Welcome!",
+    "lead": "Come and spend your holidays in Tinos, an island with a rich culture, traditional cuisine, and home of the most beautiful Cycladic villages.",
+    "p": [
+      "\"Anemflia\" (wind kisses) a word of the local dialect of Tinos, describing the gentle gusts of wind blowing like kisses. Comforting breezes that are vital on a hot day, much like the holidays to escape everyday life.",
+      "\"Anemflia\" is a small family-run apartment rental business, located right outside the new port of Tinos, next to “Kalamia” beach, with the sea right by your doorsteps. It is very close to the Tinos’ town centre (Chora) where you can stroll through the traditional cobbled alleys and visit the local museums, the Church of “Panayia Megalochari” (Great Grace), lots of stores for your daily shopping, Greek restaurants and nightclubs.",
+      "\"Anemflia appartments\" are 3-key, fully equipped appartments, ideal for getaways as well as long vacation periods. The small number of appartments ensures that guests enjoy a high level of service"
+    ]
+  },
+  "rooms": {
+    "title": "Rooms",
+    "subject": ["Our apartments are located at the new port of Tinos, 500m. from Tinos’ town centre (Chora)\" and just a 10-minute walk from the Church of “Panayia Megalochari”."],
+    "p": ["Homer described Tinos as the home island of Aeolus, god of winds, and thus our rooms were named after those ancient winds."]
+  },
+  "maistros": {
+    "title": "Maistros",
+    "subject": ["A two-room apartment which can accommodate up to 4 people, fully equipped, with a balcony and uninterrupted views."]
+  },
+  "apiliotis": {
+    "title": "Apiliotis",
+    "subject": [" A two-room apartment which can accommodate up to 4 people, fully equipped, with a small balcony and a view."]
+  },
+  "zefyros": {
+    "title": "Zefyros",
+    "subject": ["A one-room apartment with two beds, fully equipped, with a covered terrace and uninterrupted views."]
+  },
+  "mpatis": {
+    "title": "Mpatis",
+    "subject": ["A one-room apartment with two beds, fully equipped, with a small yard and uninterrupted views."]
+  }
+}
