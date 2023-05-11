@@ -1,0 +1,52 @@
+[build]
+  publish = "dist/"
+  command = "npm run build"
+
+[dev]
+  command = "npm start"
+  targetPort = 3000
+
+[[redirects]]
+  from = "/.well-known/*"
+  to = "/well-known/:splat"
+
+# Redirect any URLs with the language code in them already
+[[redirects]]
+  from = "/es/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# Show the language-specific content file
+[[redirects]]
+  from = "/*"
+  to = "/es/:splat"
+  status = 200
+  conditions = {Language = ["es"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 200
+
+# Important: Per shadowing rules (force = false) URLs for the
+# language-specific content files are served without redirects.
+
+# Redirect for end-user’s browser preference override
+[[redirects]]
+  from = "/*"
+  to = "/es/:splat"
+  status = 302
+  conditions = {Language = ["es"]}
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302

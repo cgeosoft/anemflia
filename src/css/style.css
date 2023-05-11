@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li a,
+p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.container {
+  max-width: 680px;
+}
+
+.prose h1 {
+  text-align: left;
+}
+
+.prose :where(strong):not(:where([class~="not-prose"] *)) {
+  color: var(--tw-prose);
+}
